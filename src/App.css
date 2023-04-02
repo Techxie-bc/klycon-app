@@ -1,38 +1,160 @@
-.App {
+body{
+  background: grey;
+}
+nav{
+  background-color: blue;
+  
+}
+.navbar{
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo h1{
+  color: beige;
+}
+.links ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: beige;
+}
+.links ul li{
+  font-size: 17px;
+  list-style: none;
+  margin-right: 10px;
+}
+.secondPart{
+  padding: 60px;
+  background: beige;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.images img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.title h2{
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secondContent{
+  font-size: 20px;
 }
+.services{
+  background-color: grey;
+  /* height: 80vh; */
+  padding: 100px 50px;
+  text-align: center;
+}
+.serviceHeadTitle{
+  margin: 40px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.serviceHeadTitle h2{
+  font-size: 35px;
+  margin: 20px;
+}
+.servicesCard{
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.card1, .card2, .card3{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.servicesImages img{
+   width: 300px;
+  height: 150px;
+}
+/* for contact section component */
+.contactContainer{
+  /* height: 80vh; */
+  background-color: beige;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  color: gray;
+
+}
+form{
+  width: 80%;
+  border: 2px solid #222;
+  margin: 30px;
+  padding: 30px;
+}
+form input{
+ width: 80%;
+ height: 40px;
+ margin: 10px;
+ padding: 3px;
+ outline: none;
+}
+form textarea{
+  width: 80%;
+ height: 100px;
+ margin: 10px;
+ padding: 20px;
+ outline: none;
+
+}
+form button{
+  background-color: rgb(76, 76, 150);
+  width: 100px;
+  border-radius: 20px;
+  height: 30px;
+  outline: none;
+  font-size: 20px;
+  color: beige;
+  border: none;
+}
+.imageDiv{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin: 0 auto;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageDiv img{
+ width: 200px;
+  height: 200px; 
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+.call{
+  display: flex;
+  flex-direction: row;
+}
+.call img{
+  width: 70px;
+  height: 70px;
+}
+.call p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footerContainer{
+  display: flex;
+  flex-direction: row;
+  color: beige;
+  padding: 0 20px;
+justify-content: space-between;
+}
+@media (max-width: 790px) {
+  .servicesCard{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.navbar{
+  padding: 20px;
+  display: flex;
+}
 }
